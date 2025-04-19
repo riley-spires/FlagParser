@@ -6,6 +6,7 @@ int main(int argc, char** argv) {
 
     build.append_include_dir("include");
     build.append_source_dir("src");
+    build.append_flag("ggdb");
 
     return build.build_and_run("-amount", "100", "-msg", "\"Hello, World!\"", "-price", "500.25", "-tax", "0.08");
 }
